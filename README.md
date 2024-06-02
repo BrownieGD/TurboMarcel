@@ -16,6 +16,6 @@ The syntax works like this:
   }.
 
   .Main {  
-      Name();  
+      HelloWorld();  
   }.
 </pre>
