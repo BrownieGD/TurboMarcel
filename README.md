@@ -1,3 +1,19 @@
 # Tuma / TurboMarcel
-Tuma/Turbomarcel the worst language of modern time.
+Tuma/TurboMarcel the worst language of modern time.
 When finished will be able to write HTML sites with totally no useful funktion
+
+## Syntax
+The syntax works like this:
+
+.Operation (params) name = {
+  Operations
+}.
+
+# Example:
+  .Funktion (param1) HelloWorld{
+    println("Hello World");
+}.
+
+.Main {
+    Name();
+}.
