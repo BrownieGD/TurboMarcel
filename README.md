@@ -10,14 +10,13 @@ The syntax works like this:
 }.
 
 # Example:
-  .Funktion (param1) HelloWorld{  
-  <pre>
-      println("Hello World");  
-  </pre>
-  }.
-
-.Main {  
 <pre>
-    Name();  
+  .Funktion (param1) HelloWorld{  
+      println("Hello World");  
+  }.
 </pre>
-}.
+<pre>
+  .Main {  
+      Name();  
+  }.
+</pre>
