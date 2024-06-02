@@ -14,8 +14,7 @@ The syntax works like this:
   .Funktion (param1) HelloWorld{  
       println("Hello World");  
   }.
-</pre>
-<pre>
+
   .Main {  
       Name();  
   }.
