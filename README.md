@@ -10,10 +10,10 @@ The syntax works like this:
 }.
 
 # Example:
-  .Funktion (param1) HelloWorld{
-    println("Hello World");
-}.
+  .Funktion (param1) HelloWorld{  
+      println("Hello World");  
+  }.
 
-.Main {
-    Name();
+.Main {  
+    Name();  
 }.
