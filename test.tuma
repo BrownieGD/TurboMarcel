@@ -1,0 +1,7 @@
+.Funktion (param1) HelloWorld{
+    println("Hello World");
+}.
+
+.Main {
+    Name();
+}.
