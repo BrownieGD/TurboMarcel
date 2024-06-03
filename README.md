@@ -18,4 +18,6 @@ The syntax works like this:
   .Main {  
       HelloWorld();  
   }.
+
+  .Variable name = "value".
 </pre>
