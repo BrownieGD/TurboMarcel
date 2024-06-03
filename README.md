@@ -1,6 +1,7 @@
 # Tuma / TurboMarcel
 Tuma/TurboMarcel the worst language of modern time.
 When finished it will be able to write HTML sites with totally no useful funktion
+It renames and adds some JavaScript Functions for you too use!
 
 ## Syntax
 The syntax works like this:
