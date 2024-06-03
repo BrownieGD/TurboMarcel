@@ -1,10 +1,2 @@
-.Funktion (param1) HelloWorld{
-    println("Hello World");
-}.
-
-.Main {
-    Name();
-}.
-
-test
-test
+.Variable test= "Hello World".
+.Variabletest2 = "Hello World2".
