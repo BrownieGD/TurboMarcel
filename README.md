@@ -9,5 +9,6 @@ END -> Just ends the Programm
 JMP num -> Jumps to line num
 OUT String -> Note there are no quotes! U can use {var} to insert a variable. It is just an output to the Console.
 IN varname -> Creates an variable and sets its value to an input out of the next line
-VAl name value -> Creates an variable and sets the value. Infers the type. 
+VAl name value -> Creates an variable and sets the value. Infers the type.
+COND (true) x -> If the condition is true it jumps to line x.
 ```
