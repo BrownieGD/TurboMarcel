@@ -1,9 +1,9 @@
-#What is TUMA
+# What is TUMA
 Tuma is a language designed to have the worst possible User Experience
 
-##Syntax
+## Syntax
 You can run one instruction per line
-###Right now there are:
+### Right now there are:
 ```
 END -> Just ends the Programm
 JMP num -> Jumps to line num
