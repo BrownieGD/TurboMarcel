@@ -49,6 +49,7 @@ def execute_instruction(instruction: str) -> None:
         RE_CONSOLE_OUTPUT = r"^OUT .*"
         RE_CONSOLE_INPUT = r"^IN .*"
         RE_VARIABLE = r"^VAL .* .*"
+        RE_COND = r"^COND .* .*"
         RE_END = r"^END"
 #Check which Regex and execute instruction
 #Jump
@@ -70,6 +71,16 @@ def execute_instruction(instruction: str) -> None:
         elif (re.findall(RE_VARIABLE, instruction)):
             split_up = instruction.split(" ")
             globals()[split_up[1]] = convert_to_type(split_up[2])
+#Cond Jump
+        elif (re.findall(RE_COND, instruction)):
+            pattern = r'(\w+)\s*(\(.*?\))\s*(\d+)'
+            match = re.match(pattern, instruction)
+            if match:
+                part1 = match.group(1)
+                part2 = match.group(2)
+                part3 = match.group(3)
+            if (eval(part2)):
+                curr_line = int(part3)
 #End Programm
         elif (re.findall(RE_END, instruction)):
             os._exit(0)
