@@ -1,0 +1,5 @@
+VAL i 2
+OUT Hallo, Welt!
+IN n
+OUT LMW-Entertainment {n}
+END
