@@ -74,7 +74,9 @@ def execute_instruction(instruction: str) -> None:
         # Variables
         elif re.findall(RE_VARIABLE, instruction):
             split_up = instruction.split(" ")
-            globals()[split_up[1]] = convert_to_type(split_up[2])
+            arr = split_up[2:]
+            merged_string = (''.join(arr)).strip().replace('\n', '').replace('\r', '')
+            globals()[split_up[1]] = eval(merged_string)
         # Cond Jump
         elif re.findall(RE_COND, instruction):
             pattern = r"(\w+)\s*(\(.*?\))\s*(\d+)"
@@ -91,9 +93,9 @@ def execute_instruction(instruction: str) -> None:
         # If not exist
         else:
             print("Instruction " + instruction + ": does not exist")
-    except:
-        print("Error at:" + instruction)
-
+    except Exception as e:
+        print(f"Error at: {instruction}")
+        print(f"Exception: {e}")
 
 if __name__ == "__main__":
     main()
