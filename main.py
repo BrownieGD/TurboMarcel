@@ -60,7 +60,7 @@ def execute_instruction(instruction: str) -> None:
         if re.findall(RE_JMP, instruction) != []:
             split_up = instruction.split(" ")
             line = int(split_up[1])
-            curr_line = line - 1
+            curr_line = line - 2
         # Console output
         elif re.findall(RE_CONSOLE_OUTPUT, instruction):
             out = " ".join(instruction.split()[1:])

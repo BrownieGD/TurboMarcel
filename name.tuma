@@ -1,2 +1,4 @@
-VAL x (1 + 1)
+VAL x (2 * 3)
+JMP 4
+OUT 3
 OUT {x}
